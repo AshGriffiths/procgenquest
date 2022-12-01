@@ -1,0 +1,24 @@
+[tool.poetry]
+name = "procgenquest"
+version = "0.1.0"
+description = "A procedurally generated CLI based RPG"
+authors = ["Ash Griffiths <46426454+AshGriffiths@users.noreply.github.com>"]
+license = "Unlicense"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+textual = "^0.5.0"
+rich = "^12.6.0"
+typer = "^0.7.0"
+
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^7.2.0"
+black = "^22.10.0"
+flake8 = "^6.0.0"
+mypy = "^0.991"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
