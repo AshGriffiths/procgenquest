@@ -3,7 +3,7 @@ from textual.containers import Horizontal, Vertical
 from textual.widgets import Header, Footer, TextLog
 
 from .widgets import EventLog, CharacterSheet
-from .generator import CaveGenerator
+from .generators import CaveGenerator
 
 
 class QuestApp(App):

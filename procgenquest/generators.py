@@ -5,6 +5,14 @@ import scipy.signal
 from numpy.typing import NDArray
 
 
+class DungeonGenerator:
+    def __init__(self):
+        pass
+
+    def show(self) -> str:
+        return ""
+
+
 class CaveGenerator:
     def __init__(
         self,
