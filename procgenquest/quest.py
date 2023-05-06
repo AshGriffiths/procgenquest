@@ -1,9 +1,9 @@
-from textual import events
 from textual.app import App, ComposeResult
 from textual.containers import Horizontal, Vertical
 from textual.widgets import Header, Footer, TextLog
 
 from .widgets import EventLog, CharacterSheet
+from .generator import CaveGenerator
 
 
 class QuestApp(App):
@@ -21,9 +21,10 @@ class QuestApp(App):
         yield Horizontal(EventLog(id="log"), Vertical(CharacterSheet(), id="sheet"))
         yield Footer()
 
-    def on_key(self, event: events.Key) -> None:
+    def on_ready(self) -> None:
         text_log = self.query_one(TextLog)
-        text_log.write(event)
+        cave_gen = CaveGenerator()
+        text_log.write(cave_gen.show())
 
     def action_toggle_dark(self) -> None:
         self.dark = not self.dark

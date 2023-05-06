@@ -10,11 +10,14 @@ readme = "README.md"
 procgenquest = "procgenquest.main:app"
 
 [tool.poetry.dependencies]
-python = "^3.11"
+python = ">=3.11,<3.12"
 textual = "*"
 rich = "*"
 typer = "*"
 shellingham = "*"
+numpy = "*"
+scipy = "*"
+
 
 [tool.poetry.group.dev.dependencies]
 pytest = "*"
