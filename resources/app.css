@@ -1,0 +1,15 @@
+#log {
+    dock: left;
+    width: 70%;
+}
+
+#sheet {
+    dock: right;
+    width: 30%;
+}
+
+#log_title {
+    background: rgba(20,150,20,0.5);
+    text-align: center;
+    width: 100%;
+}
